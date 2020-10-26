@@ -1,0 +1,8 @@
+{
+    "steps": "./steps",
+    "pageObjects": "./pages",
+    "sharedObjects": "./helpers",
+    "reports": "./reports",
+    "browser": "chrome",
+    "timeout": 10000
+}
