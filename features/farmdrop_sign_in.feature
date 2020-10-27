@@ -38,7 +38,10 @@ Feature: Farmdrop Sign in Tests
     Then I fill in the zipcode as "EC1V 9BP"
     Then I select the mailing list as "No, thanks"
     Then I click the 'Let's fix the food chain' button
-    Then I shall see an error saying "An unknown error occurred, if this persists please contact hello@farmdrop.com"
+    Then I shall see an error saying
+    """
+    An unknown error occurred, if this persists please contact hello@farmdrop.com
+    """
     Then I shall be at the Signup page
     Then I shall see the account item text as "Sign up or Log in"
 
@@ -87,7 +90,10 @@ Feature: Farmdrop Sign in Tests
     Then I fill in the password as "test123"
     Then I fill in the zipcode as "EC1V 9BP"
     Then I click the 'Let's fix the food chain' button
-    Then I shall see an error for the Mailing list as "Let us know if you would like to sign up for the latest seasonal news, updates and exclusive offers below:"
+    Then I shall see an error for the Mailing list as 
+    """
+    Let us know if you would like to sign up for the latest seasonal news, updates and exclusive offers below:
+    """
     Then I shall be at the Signup page
     Then I shall see the account item text as "Sign up or Log in"
 
